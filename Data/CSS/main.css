@@ -3,6 +3,13 @@
     color: #FFFFFF;
     text-align: center;
     vertical-align: middle;
+    font-family: 'Caveat', cursive;
+    font-size: 100px;
+}
+
+body {
+    height: 1vh;
+    width: 100%;
 }
 
 img {
@@ -12,4 +19,13 @@ img {
     z-index: -1;
     left: 0;
     top: 0;
+}
+
+.flex{
+    display:flex;
+    height:100vh;
+}
+.middle{
+    align-self: center;
+    margin:0 auto
 }

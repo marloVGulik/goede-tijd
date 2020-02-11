@@ -23,12 +23,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet"> 
     <link href="./Data/CSS/main.css" rel="stylesheet">
-    <title><?php echo $outputText ?></title>
+    <title><?= $outputText ?></title>
 </head>
-<body>
-    <?php echo '<img class="backgroundImage" src="./Data/Images/'.$imageSrc.'" alt="TEST?">'; ?>
-    <h1><?php echo $outputText ?></h1>
-    <h1><?php echo "Het is nu " . date('H\:i') ?></h1>
+<body class="flex">
+    <img class="backgroundImage" src="./Data/Images/<?=$imageSrc?>" alt="TEST?">
+    <div id="text" class='middle'>
+        <h1><?= $outputText ?></h1>
+        <h1><?= "Het is nu " . date('H\:i') ?></h1>
+    </div>
 </body>
 </html>
